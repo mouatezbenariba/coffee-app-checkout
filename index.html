@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Elmouatez Bilah Benariba" />
+    <meta
+      name="description"
+      content="A simple implementation of a coffee shop's checkout page in HTML and CSS. This project is part of the Complete Intro to Web Development V3 course by Brian Holt."
+    />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- main css style -->
+    <link rel="stylesheet" href="master.css" />
+    <title>Coffee App Checkout</title>
+  </head>
+  <body>
+    <div class="coffee-checkout">
+      <header class="checkout__header">
+        <img
+          src="images/icons/coffee_masters_logo.png"
+          alt="coffee shop logo"
+          class="checkout__logo"
+        />
+        <span class="checkout__shop-name">Coffee Masters</span>
+      </header>
+      <main>
+        <div class="checkout__details">
+          <section class="checkout__items">
+            <h2>Items</h2>
+            <ul>
+              <li class="checkout__item">
+                <span class="checkout__item-quantity">1x</span>
+                <div>
+                  <div class="checkout__item-name">Cappuccino</div>
+                  <div class="checkout__item-type">Lite foam</div>
+                </div>
+                <span class="checkout__item-price">$3.35</span>
+              </li>
+              <li class="checkout__item">
+                <span class="checkout__item-quantity">1x</span>
+                <div>
+                  <div class="checkout__item-name">Cappuccino</div>
+                  <div class="checkout__item-type">
+                    <span>lite milk</span>
+                    <span>Double espresso</span>
+                  </div>
+                </div>
+                <span class="checkout__item-price">$3.85</span>
+              </li>
+              <li class="checkout__item">
+                <span class="checkout__item-quantity">1x</span>
+                <div>
+                  <div class="checkout__item-name">Croissant</div>
+                  <div class="checkout__item-type">Butter</div>
+                </div>
+                <span class="checkout__item-price">$2.45</span>
+              </li>
+            </ul>
+          </section>
+          <section class="checkout__info">
+            <div class="checkout__name">
+              <h2>Name</h2>
+              <div class="order-name">
+                <label for="name-input" class="name-label">Name for order</label>
+                <input id="name-input" class="name-input" placeholder="try typing here" />
+              </div>
+            </div>
+            <div class="checkout__payment">
+              <h2>Payment</h2>
+              <div class="order-card">
+                <label for="card-input" class="card-label">Card Name</label>
+                <input id="card-input" class="card-input" placeholder="try typing here" />
+              </div>
+              <div class="order-ccv">
+                <label for="ccv-input" class="ccv-label">CCV Number</label>
+                <input id="ccv-input" class="ccv-input" placeholder="try typing here" />
+              </div>
+            </div>
+          </section>
+        </div>
+        <table class="total">
+          <tr>
+            <td>Subtotal</td>
+            <td>$9.65</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td>$0.82</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>$10.47</td>
+          </tr>
+        </table>
+        <input type="submit" value="Place Order" />
+      </main>
+    </div>
+  </body>
+</html>
