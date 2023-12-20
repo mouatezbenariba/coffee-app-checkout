@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Khaki */
+  --khaki-100: #fbf2c1;
+
+  /* Gray */
+  --gray-100: #eff0f0;
+
+  /* Orange */
+  --orange-100: #eee1d5;
+
+  /* Vermilion */
+  --vermilion-100: #412315;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* header style */
+
+.checkout__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--vermilion-100);
+}
+
+.checkout__logo {
+  width: 50px;
+  height: 50px;
+}
+
+.checkout__shop-name {
+  color: var(--khaki-100);
+}
+
+/* main style */
+
+.checkout__details {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 2rem;
+}
+
+section.checkout__items {
+  flex-basis: 45%;
+  padding: 1rem;
+  background-color: #eee1d5;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 9px 0px #d5d5d5;
+}
